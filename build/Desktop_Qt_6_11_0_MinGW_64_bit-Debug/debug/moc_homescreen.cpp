@@ -40,12 +40,12 @@ template <> constexpr inline auto HomeScreen::qt_create_metaobjectdata<qt_meta_t
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "HomeScreen",
-        "0$QVgNRwMpskBNkn8/SrRYYrD9Thk",
+        "0$nnbfK4hOYd239uuhvBhPuGxAg5E",
         "startGameClicked",
         "",
-        "exitClicked",
+        "backToMenuClicked",
         "onStartClicked",
-        "onExitClicked",
+        "onBackToMenuClicked",
         "onDifficultyChanged",
         "id",
         "titleScale"
@@ -54,11 +54,11 @@ template <> constexpr inline auto HomeScreen::qt_create_metaobjectdata<qt_meta_t
     QtMocHelpers::UintData qt_methods {
         // Signal 'startGameClicked'
         QtMocHelpers::SignalData<void()>(2, 3, QMC::AccessPublic, QMetaType::Void),
-        // Signal 'exitClicked'
+        // Signal 'backToMenuClicked'
         QtMocHelpers::SignalData<void()>(4, 3, QMC::AccessPublic, QMetaType::Void),
         // Slot 'onStartClicked'
         QtMocHelpers::SlotData<void()>(5, 3, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onExitClicked'
+        // Slot 'onBackToMenuClicked'
         QtMocHelpers::SlotData<void()>(6, 3, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onDifficultyChanged'
         QtMocHelpers::SlotData<void(int)>(7, 3, QMC::AccessPrivate, QMetaType::Void, {{
@@ -91,9 +91,9 @@ void HomeScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->startGameClicked(); break;
-        case 1: _t->exitClicked(); break;
+        case 1: _t->backToMenuClicked(); break;
         case 2: _t->onStartClicked(); break;
-        case 3: _t->onExitClicked(); break;
+        case 3: _t->onBackToMenuClicked(); break;
         case 4: _t->onDifficultyChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
@@ -101,7 +101,7 @@ void HomeScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (HomeScreen::*)()>(_a, &HomeScreen::startGameClicked, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (HomeScreen::*)()>(_a, &HomeScreen::exitClicked, 1))
+        if (QtMocHelpers::indexOfMethod<void (HomeScreen::*)()>(_a, &HomeScreen::backToMenuClicked, 1))
             return;
     }
     if (_c == QMetaObject::ReadProperty) {
@@ -164,7 +164,7 @@ void HomeScreen::startGameClicked()
 }
 
 // SIGNAL 1
-void HomeScreen::exitClicked()
+void HomeScreen::backToMenuClicked()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }

@@ -10,18 +10,31 @@ CONFIG += c++17
 
 SOURCES += \
     gamescreen.cpp \
+    home.cpp \
     homescreen.cpp \
     main.cpp \
+    mainHomeScreen.cpp \
     mainwindow.cpp \
+    minesweeper.cpp \
+    snake.cpp \
     sudokuboard.cpp \
+    sudokucontroller.cpp \
     sudokugame.cpp \
     sudokusolver.cpp
 
 HEADERS += \
+    basegamescreen.h \
     gamescreen.h \
+    gamesize.h \
+    gamesizes.h \
+    home.h \
     homescreen.h \
+    mainHomeScreen.h \
     mainwindow.h \
+    minesweeper.h \
+    snake.h \
     sudokuboard.h \
+    sudokucontroller.h \
     sudokugame.h \
     sudokusolver.h
 

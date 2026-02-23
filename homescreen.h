@@ -36,7 +36,7 @@ public:
 
 signals:
     void startGameClicked();
-    void exitClicked();
+    void backToMenuClicked();  // Changed from exitClicked to backToMenuClicked
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -45,7 +45,7 @@ protected:
 
 private slots:
     void onStartClicked();
-    void onExitClicked();
+    void onBackToMenuClicked();  // Changed from onExitClicked
     void onDifficultyChanged(int id);
 
 private:
@@ -65,7 +65,7 @@ private:
     QRadioButton *m_mediumRadio;
     QRadioButton *m_hardRadio;
     QPushButton *m_startBtn;
-    QPushButton *m_exitBtn;
+    QPushButton *m_backToMenuBtn;  // Changed from m_exitBtn
     QLabel *m_creditLabel;
 
     QPropertyAnimation *m_titleAnimation;
